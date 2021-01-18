@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPID | Motomensajeria</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <h1 class="logo"><i class="fas fa-motorcycle"></i> RAPID</h1>
+            <div class="form-usuario">
+                <label for="" id="nombre">Ingrese su nombre</label>
+                <input type="text" class="nombre">
+                <button class="enviar">Enviar</button>
+            </div>
+        </div>
+        <h3 class="servicios">Servicio de envíos y paquetería</h3>
+    </header>
+    <main>
+        <h3 class="text-main">Seleccione fecha y horario para verificar la disponibilidad de una moto</h3>
+        <input type="date" name="fecha" class="calendario" value="2021-01-01" 
+        min="2021-01-01" max="2021-01-31"  id="calendario">
+        
+        <section class="esquema">
+            <div class="ventana" id="ventana">
+            </div>   
+            <select name="horarios" class="lista-horarios" id="horario">
+                <option value="8:00" id="hora8:00">8:00</option>
+                <option value="8:30" id="hora8:30">8:30</option>
+                <option value="9:00" id="hora9:00">9:00</option>
+                <option value="9:30" id="hora9:30">9:30</option>
+                <option value="10:00" id="hora10:00">10:00</option>
+                <option value="10:30" id="hora10:30">10:30</option>
+                <option value="11:00" id="hora11:00">11:00</option>
+                <option value="11:30" id="hora11:30">11:30</option>
+                <option value="12:00" id="hora8:00">12:00</option>
+                <option value="12:30" id="hora8:00">12:30</option>
+                <option value="13:00" id="hora8:00">13:00</option>
+                <option value="13:30" id="hora8:00">13:30</option>
+                <option value="14:00" id="hora8:00">14:00</option>
+                <option value="14:30" id="hora8:00">14:30</option>
+                <option value="15:00" id="hora8:00">15:00</option>
+                <option value="15:30" id="hora8:00">15:30</option>
+                <option value="16:00" id="hora8:00">16:00</option>
+                <option value="16:30" id="hora8:00">16:30</option>
+                <option value="17:00" id="hora8:00">17:00</option>
+                <option value="17:30" id="hora8:00">17:30</option>
+                <option value="18:00" id="hora8:00">18:00</option>
+                <option value="18:30" id="hora8:00">18:30</option>
+                <option value="19:00" id="hora8:00">19:00</option>
+                <option value="19:30" id="hora8:00">19:30</option>
+               </select>
+            <div class="primera disponibilidad">
+                <p>Motos disponibles: </p><p class="cantidad-disponible" id="8:00d">8</p>
+            </div>
+            
+        </section>
+        <section class="esquema">
+            <div class="fondo-muestra-motos-reservadas">
+                <p class="titulo-motos-reservadas">Motos reservadas</p>
+                <div class="muestra-motos-reservadas">
+                    <div class="disponibilidad motos">
+                        <p class="motos-reservadas">No se encuentran motos reservadas</p>
+                    </div>
+                    <div class="botonera-cancelacion">
+                        <button class="cancelar" id="cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="esquema">
+            <div class="muestra-resultados">
+                <p class="texto-resultado">Aun no ha seleccionado ninguna moto</p>
+                <button class="confirmar" id="confirmar">Confirmar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="derechos">
+            <p>Derechos reservados</p>
+            <p>2021</p>
+        </section>
+        <section class="desarrollador">
+            <p>Desarrollado por</p> 
+            <a href="http://www.roma-it.ar">Roma-it</a>
+        </section>
+        <section class="redes">
+            <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            <a href="https://github.com" target="_blank"><img src="img/GitHub-logo.png" alt=""></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="img/logoInsta.jpg" alt=""></a>
+        </section>
+    </footer>
+    <script src="/js/scriptmoto2.js"></script>
+</body>
+</html>

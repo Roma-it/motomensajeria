@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75rem;
+}
+header{
+    background-color: teal;
+    padding: 10px 10px 5px;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+.logo{
+    display: inline-block;
+    text-align: center;
+    text-shadow: 3px 5px 8px black;
+    font-size: 1.75rem;
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#nombre{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(182, 208, 219);
+    text-align: center;
+}
+.enviar{
+    border: none;
+    font-weight: 600;
+    background-color: rgba(248, 156, 122, 0.5);
+    padding: 5px 10px;
+    outline: none;
+}
+.nombre{
+    border: none;
+    margin: 5px 0;
+    background-color: rgba(248, 156, 122, 0.8);;
+    outline: none;
+    padding: 5px;
+}
+.servicios{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    font-style: italic;
+}
+main{
+    display: flex;
+   flex-direction: column;
+}
+.text-main{
+    font-weight: 500;
+    text-align: center;
+    margin: 15px auto 5px;
+    width: 80%;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1rem;
+}
+.ventana{
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(83, 65, 65, 0.9);
+    border: solid 2px white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+    display: none;
+    box-shadow: 0px 5px 12px rgb(46, 45, 45);
+}
+.calendario{
+    margin: 15px auto;
+    padding: 10px;
+    background-color: rgba(248, 156, 122, 0.5);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(8, 80, 80, 0.9);
+}
+.esquema{
+    background-color: rgba(178, 210, 211,0.7);
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px black;
+    position: relative;
+    align-items: flex-start;
+}
+.lista-horarios{
+    margin: 3px 10px 3px 0px;
+    padding: 0 5px;
+    height: 28px;
+    width: 70px;
+    background-color: rgba(248, 156, 122, 0.5);
+    border: none;
+    font-size: 0.9rem;
+}
+.disponibilidad p{
+    margin: 0;
+    display: inline-block;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+.disponibilidad{
+    margin: 3px 0;
+    height: 28px;
+    background-color: rgba(248, 156, 122, 0.5);
+}
+.cantidad-disponible{
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    
+}
+.fondo-muestra-motos-reservadas{
+    padding: 10px;
+    height: 100px;
+    width: 90%;
+    border: cadetblue solid 2px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px black;
+    background-color: rgba(211, 230, 230, 0.6);
+}
+.titulo-motos-reservadas{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+.muestra-motos-reservadas{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.motos-reservadas{
+    margin: 0;
+    display: inline-block;
+    padding: 3px 5px 5px 5px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+}
+.motos{
+    width: 80%;
+    height: 45px;
+}
+.botonera-cancelacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cancelar{
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 3px;
+    background-color: red;
+    border: none;
+    font-size: 1rem;
+}
+.muestra-resultados{
+    width: 90%;
+    border: cadetblue solid 2px;
+    height: 160px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px black;
+    background-color: rgba(211, 230, 230, 0.6);
+    position: relative;
+}
+.texto-resultado{
+    font-size: 1rem;
+    color: rgba(83, 65, 65, 0.9);
+    padding: 15px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Yusei Magic', sans-serif;;
+}
+.confirmar{
+    display: block;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(28, 209, 28);
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: 5%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    font-size: 0.55rem;
+    align-self: end;
+}
+footer img{
+    width: 20px;
+}
+.derechos{
+    width: 30%;
+    text-align: center;
+}
+.desarrollador{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 20px;
+    }
+
+    .fondo-muestra-motos-reservadas,
+    .muestra-resultados{
+        width: 90%;
+    }
+    .esquema{
+        width: 80%;
+        margin: 5px auto 20px;
+    }
+    .logo{
+        padding: 15px;
+    }
+    .confirmar {
+        width: 30%;
+        left: 35%;
+    }
+    .form-usuario{
+        width: 200px;
+    }
+    .cancelar{
+        height: 35px;
+    }
+    .muestra-motos-reservadas,
+    .motos-reservadas,
+    .motos{
+        height: 35px;
+    }
+    .disponibilidad,
+    .lista-horarios{
+        height: 32px;
+    }
+}
+@media (min-width: 1000px){
+    .disponibilidad{
+        width: 85%;
+    }
+    .botonera-cancelacion{
+        width: 15%;
+    }
+    .primera{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lista-horarios{
+        width: 30%;
+        padding-left: 10px;
+    }
+    footer img{
+        width: 40px;
+    }
+    footer{
+        font-size: 0.7rem;
+    }
+}
